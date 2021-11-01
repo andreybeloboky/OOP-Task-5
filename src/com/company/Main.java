@@ -40,8 +40,7 @@ public class Main {
                 System.out.println("How many products you want buy?");
                 int size = scanner.nextInt();
                 Product[] products = new Product[size];
-                String[] listProduct = new String[size];
-                Basket basket = new Basket(products, listProduct);
+                Basket basket = new Basket(products);
                 User user = new User(userName, password, basket);
                 System.out.println("You are logged in as:" + " " + user.getLogin());
                 for (int i = 0; i < size; i++) {
@@ -82,7 +81,7 @@ public class Main {
                     }
                 }
                 System.out.println("List of products for bought");
-                listProduct = basket.getBoughtProduct();
+                String[] listProduct = basket.getBoughtProduct();
                 for (int i = 0; i < listProduct.length; i++) {
                     System.out.println(listProduct[i]);
                 }
