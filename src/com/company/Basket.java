@@ -1,13 +1,18 @@
 package com.company;
 
 public class Basket {
-    private String ListOfBoughtProducts;
+    private Product[] boughtProduct;
+    private String[] listProduct;
 
-    public Basket(String ListOfBoughtProducts) {
-        this.ListOfBoughtProducts = ListOfBoughtProducts;
+    public Basket(Product[] boughtProduct, String[] listProduct) {
+        this.boughtProduct = boughtProduct;
+        this.listProduct = listProduct;
     }
 
-    public String getListOfBoughtProducts() {
-        return ListOfBoughtProducts;
+    public String[] getBoughtProduct() {
+        for (int i = 0; i < listProduct.length; i++) {
+            listProduct[i] = boughtProduct[i].getName();
+        }
+        return listProduct;
     }
 }

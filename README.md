@@ -1,4 +1,4 @@
-[OOP] Market
+[OOP] [GitHub] Add a user who uses the internet market and he bought products.
 Short description
 
 There are three method in this program: Basket, user and product. Method basket is creates place for product user, product is creates array with various the product, method user is saves login and password

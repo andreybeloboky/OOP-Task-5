@@ -2,8 +2,8 @@ package com.company;
 
 public class Product {
     private String name;
-    private  int price;
-    private  int rating;
+    private int price;
+    private int rating;
 
     public Product(String name, int price, int rating) {
         this.name = name;
